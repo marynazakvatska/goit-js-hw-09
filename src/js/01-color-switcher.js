@@ -16,9 +16,12 @@ function getRandomHexColor() {
 }
 
 startBtn.addEventListener('click', function onClick(e) {
+  if (e.currentTarget.disabled) {
+    return
+  }
       e.currentTarget.disabled = true;
     stopBtn.disabled = false
-   timeIntervalId = setInterval(function () {
+  timeIntervalId = setInterval(function () {
        document.body.style.backgroundColor = getRandomHexColor();
        
     }, DELAY)

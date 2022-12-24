@@ -16,8 +16,6 @@ const refs = {
 }
 
 
-
-
 refs.startBtn.disabled = true;
      
  flatpickr('input[type="text"]', {
@@ -27,7 +25,6 @@ refs.startBtn.disabled = true;
   minuteIncrement: 1,
      onClose(selectedDates) {
         console.log(selectedDates[0]);
-       /*  console.log(minuteIncrement)*/ 
         if (selectedDates[0] < new Date()) {
             window.alert("Please choose a date in the future");
             refs.startBtn.disabled = true;
