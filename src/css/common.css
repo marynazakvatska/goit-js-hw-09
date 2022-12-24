@@ -17,8 +17,8 @@ img {
   max-width: 100%;
 }
 .btn {
-    width: 10em;
-    height: 5ex;
+    width: 30em;
+  
     background-color: gold;
     border: 2px solid firebrick;
     border-radius: 10px;
@@ -28,4 +28,13 @@ img {
   }
 .btn:disabled {
     background-color: bisque;
+
+}
+.timer {
+  text-align: center;
+}
+.button_switch {
+  margin-top: 240px;
+    text-align: center;
+    
 }
